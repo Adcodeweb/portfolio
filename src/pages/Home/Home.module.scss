@@ -1,0 +1,242 @@
+@import "../../base/breakpoints";
+
+.container {
+  width: 100%;
+  padding-bottom: 100px;
+  position: relative;
+  @include md {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 80px 0 80px 80px;
+
+    @include md {
+      margin: 60px 0 60px 50px;
+    }
+  }
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  @include md {
+    width: 95%;
+  }
+}
+
+.heroContainer {
+  margin: 10px 0;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+
+  @include md {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.heroRight {
+  h1 {
+    font-size: 70px;
+    text-transform: capitalize;
+    font-weight: 800;
+  }
+  p {
+    color: #da7511;
+    font-weight: 600;
+
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+.aboutMe {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: #000;
+  padding-bottom: 40px;
+
+  @include md {
+    padding: 0 0 100px;
+  }
+}
+.aboutMeWrapper {
+  gap: 10px;
+  display: grid;
+  width: 70%;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 50%);
+  justify-content: center;
+  align-items: center;
+
+  @include md {
+    grid-template-columns: 100%;
+  }
+  img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .textSkills {
+    margin: 0 auto;
+  }
+  p {
+    font-size: 14px;
+    color: rgb(220, 220, 220);
+    margin-bottom: 10px;
+
+    h5 {
+      display: inline-block;
+      font-size: 20px;
+      color: #23cd00;
+    }
+  }
+
+  .subtitle {
+    margin: 20px 0 20px 20px;
+  }
+}
+
+.aboutMeWrapperRight {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+
+  .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+}
+
+.projects {
+  padding-top: 30px;
+  h2 {
+    margin: 50px 0;
+  }
+
+  p {
+    font-size: 14px;
+    color: rgb(220, 220, 220);
+    margin-bottom: 10px;
+  }
+
+  .projectsText {
+    width: 60%;
+    margin-bottom: 150px;
+
+    @include md {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.projectsWrapper {
+  padding-bottom: 30px;
+  width: 80%;
+  margin: 0 auto;
+
+  @include md {
+    width: 95%;
+  }
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 55px 0;
+  border-radius: 10px;
+  border-bottom: 1px solid #23cd00;
+
+  .cardContainerLeft {
+    width: 50%;
+    min-height: 300px;
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    transition: all ease-in 100ms;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      right: -20px;
+      left: 20px;
+      top: 20px;
+      bottom: -20px;
+      position: absolute;
+      z-index: -1;
+      border-radius: 10px;
+      border-right: 1px solid #23cd00;
+      border-bottom: 1px solid #23cd00;
+    }
+    &:hover {
+      border-right: 1px solid #da7511;
+      border-bottom: 1px solid #da7511;
+    }
+  }
+  .cardContainerRight {
+    padding: 20px 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: left;
+
+    h3 {
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgb(220, 220, 220);
+    }
+
+    .cardBotons {
+      display: flex;
+      margin-top: 20px;
+      gap: 10px;
+      justify-content: center;
+      button {
+        font-size: 10px;
+        background-color: transparent;
+        border: 2px solid rgb(65, 65, 65);
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.544);
+        }
+
+        .botonIcon {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.correo {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: rgba(17, 17, 17, 0.733);
+  border: 1px solid #23cd00;
+  color: rgb(252, 252, 252);
+  padding: 10px 10px 10px 30px;
+  border-radius: 20px 0 0 20px;
+  font-size: 12px;
+}

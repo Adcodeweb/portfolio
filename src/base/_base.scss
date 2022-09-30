@@ -1,0 +1,29 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  // color: rgb(4, 1, 30);
+  color: white;
+  scroll-behavior: smooth;
+}
+.app {
+  background-color: hsla(132, 100%, 25%, 1);
+  background-image: linear-gradient(
+    to right,
+    rgb(55, 65, 81),
+    rgb(17, 24, 39),
+    rgb(0, 0, 0)
+  );
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
