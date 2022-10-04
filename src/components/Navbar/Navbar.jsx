@@ -3,6 +3,7 @@ import { Button } from "../Button";
 import s from "./Navbar.module.scss";
 import NavItem from "./NavItem";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
+import { HashLink } from "react-router-hash-link";
 
 export function Navbar() {
   return (
@@ -13,12 +14,12 @@ export function Navbar() {
         </Link>
       </div>
       <nav className={s.navItems}>
-        <a href="#home">Home</a>
-        <a href="#About">About</a>
-        <a href="#projects">Code</a>
-        <a href="https://github.com/Adcodeweb">
+        <HashLink to="/#home">Home</HashLink>
+        <HashLink to="/#About">About</HashLink>
+        <HashLink to="/#projects">Code</HashLink>
+        <HashLink to="https://github.com/Adcodeweb">
           <AiFillGithub className={s.icon} />
-        </a>
+        </HashLink>
       </nav>
     </div>
   );

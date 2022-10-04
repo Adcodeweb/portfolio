@@ -68,9 +68,7 @@ export function Home() {
           </div>
         </div>
       </section>
-      {/* <div className={s.msg}>
-        <span>Hello world!</span>
-        </div> */}
+
       <section className={s.projects} id="projects">
         <h2 className={s.title}>.Projects</h2>
         <div className={s.wrapper}>
