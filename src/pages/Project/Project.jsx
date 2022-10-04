@@ -31,14 +31,17 @@ export function Project() {
         <div className={s.wrapper}>
           <Button name={"Go back"} onClick={() => navigate(-1)} />
           <header className={s.header}>
-            <h1>{project?.title}</h1>
-            <p>{project?.overview}</p>
-            <div className={s.tagsContainer}>
-              {ready &&
-                project.tags?.map((item, index) => {
-                  return <h6 key={index}>{item}</h6>;
-                })}
+            <div className={s.info}>
+              <h1>{project?.title}</h1>
+              <p>{project?.overview}</p>
+              <div className={s.tagsContainer}>
+                {ready &&
+                  project.tags?.map((item, index) => {
+                    return <h6 key={index}>{item}</h6>;
+                  })}
+              </div>
             </div>
+            <img src={project?.projectImg} />
           </header>
           {ready &&
             project.explanation?.map((item, index) => {

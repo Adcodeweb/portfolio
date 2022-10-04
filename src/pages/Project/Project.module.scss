@@ -3,6 +3,7 @@
 .container {
   display: grid;
   grid-template-columns: 80% 20%;
+  background-color: rgb(33, 33, 33);
   @include md {
     grid-template-columns: 100%;
   }
@@ -37,6 +38,18 @@
   margin-bottom: 30px;
   border-bottom: 1px solid white;
   padding: 20px 0;
+  display: flex;
+  gap: 30px;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  img {
+    max-width: 30%;
+  }
 }
 
 .tagsContainer {
