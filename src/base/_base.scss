@@ -11,17 +11,16 @@
   scroll-behavior: smooth;
 }
 .app {
-  background-color: hsla(132, 100%, 25%, 1);
-  background-image: linear-gradient(
-    to right,
-    rgb(55, 65, 81),
-    rgb(17, 24, 39),
-    rgb(0, 0, 0)
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(1, 15, 6, 0.97514980113139) 50%,
+    rgba(5, 9, 7, 1) 100%
   );
 }
 a {
   text-decoration: none;
-  color: white;
 }
 
 ul {
