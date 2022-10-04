@@ -6,8 +6,31 @@ import { FaSass } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
 import { SiFirebase } from "react-icons/si";
 import person from "./p.png";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../hooks/firebase-config";
+import { useEffect, useState } from "react";
+
+const docsRef = collection(db, "projects");
 
 export function Home() {
+  const [projects, setProjects] = useState([]);
+
+  const getDocsFromDB = async () => {
+    try {
+      const querySnapshot = await getDocs(docsRef);
+      const datos = querySnapshot.docs.map((doc) => ({
+        ...doc.data(),
+        id: doc.id,
+      }));
+
+      setProjects(datos);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+  useEffect(() => {
+    getDocsFromDB();
+  }, []);
   return (
     <div className={s.container}>
       <section className={s.heroContainer}>
@@ -23,7 +46,7 @@ export function Home() {
           <div className={s.textSkills}>
             <div className={s.aboutMeText}>
               <p>
-                Hi, my name is <h5>Alberto Sierra</h5>, I am a Front-end web
+                Hi, my name is <span>Alberto Sierra</span>, I am a Front-end web
                 developer. When I'm not coding I like to go out for a run.
               </p>
               <p>
@@ -59,9 +82,11 @@ export function Home() {
             </p>
           </div>
           <div className={s.projectsWrapper}>
-            <Card />
-            <Card direction={true} />
-            <Card />
+            {projects?.map((item, index) => {
+              if (index % 2 == 0) {
+                return <Card key={index} item={item} />;
+              } else return <Card key={index} item={item} direction={true} />;
+            })}
           </div>
         </div>
       </section>

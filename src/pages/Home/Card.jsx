@@ -4,7 +4,8 @@ import { AiOutlineLink } from "react-icons/ai";
 import { FiPlus } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-export default function Card({ direction }) {
+export default function Card({ direction, item }) {
+  console.log(item);
   return (
     <div
       className={s.cardContainer}
@@ -17,13 +18,10 @@ export default function Card({ direction }) {
         }}
       ></div>
       <div className={s.cardContainerRight}>
-        <h3>Titulo</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sit
-          quaerat dolores quisquam cumque. Quisquam!
-        </p>
+        <h3>{item?.title}</h3>
+        <p>{item?.overview}</p>
         <div className={s.cardBotons}>
-          <Link to="/project">
+          <Link to={`/project/${item?.id}`}>
             <Button name={<FiPlus className={s.botonIcon} />} />
           </Link>
           <Button name={<AiOutlineLink className={s.botonIcon} />} />
