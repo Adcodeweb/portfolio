@@ -15,8 +15,13 @@ export default function Menu({ closeModal }) {
             About
           </HashLink>
         </div>
-        <div className="p-5 text-center">
-          <h5 className="border border-white cursor-pointer">Contact</h5>
+        <div className="p-5 mb-5 text-center">
+          <a
+            href="mailto:adcodeweb@gmail.com"
+            className="border border-white cursor-pointer "
+          >
+            Contact
+          </a>
         </div>
       </div>
     </div>

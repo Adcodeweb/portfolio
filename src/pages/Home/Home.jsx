@@ -5,7 +5,7 @@ import Projects from "./sections/Projects";
 
 export function Home() {
   return (
-    <div>
+    <div className="">
       <Navbar />
       <Hero />
       <About />

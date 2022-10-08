@@ -17,7 +17,7 @@ export default function Navbar() {
     document.body.style.overflow = "unset";
   };
   return (
-    <div className="fixed w-full bg-black/20">
+    <div className="fixed w-full bg-gradient-to-t from-transparent to-black h-14">
       <div className=" relative text-white flex justify-between p-4">
         <div className="">
           <h2>Adcode</h2>
