@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div
-      className="  flex flex-col justify-center h-screen bg-gradient-to-tl from-black to-cyan-800 "
+      className="  flex flex-col justify-center h-screen bg-gradient-to-tl from-black to-cyan-800  "
       id="home"
     >
       <div className="p-4">
@@ -9,6 +9,8 @@ export default function Hero() {
           Alberto Sierra
         </h1>
         <p className=" text-2xl">Front-End Developer</p>
+        <p className=" text-xl">adcodeweb@gmail.com</p>
+        <p className=" text-lg">Venezuela</p>
       </div>
     </div>
   );

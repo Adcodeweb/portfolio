@@ -16,7 +16,7 @@ export default function Project() {
       >
         <TiArrowBackOutline />
       </button>
-      <div className="p-5">
+      <div className="p-5 mt-5">
         <div className="flex flex-col md:flex-row gap-5 items-center">
           {/* left */}
           <div className="flex-1">
@@ -40,7 +40,7 @@ export default function Project() {
           <img
             src="https://media.giphy.com/media/VgkbQX1NTzmDuIcPRs/giphy.gif"
             alt="project img"
-            className="mx-auto my-5 flex-1 md:h-64 object-cover object-top lg:h-80  "
+            className="mx-auto my-5 flex-1 md:h-64 object-cover object-top lg:h-96  "
           />
         </div>
         <div className="flex flex-wrap gap-4  justify-center p-4 md:border-b md:mt-7 border-white ">

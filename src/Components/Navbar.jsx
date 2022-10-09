@@ -18,7 +18,7 @@ export default function Navbar() {
     document.body.style.overflow = "unset";
   };
   return (
-    <div className="fixed w-full bg-gradient-to-t from-transparent to-black ">
+    <div className="fixed top-0 left-0 right-0  bg-gradient-to-b from-black to-transparent  ">
       <div className=" relative text-white flex items-center justify-between p-4 h-24">
         <div className="text-2xl ">
           <Link to="/">Adcode</Link>

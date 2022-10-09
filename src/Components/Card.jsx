@@ -2,7 +2,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { Link } from "react-router-dom";
 export default function Card() {
   return (
-    <div className=" my-5 p-4 gap-5 grid lg:grid-cols-2  ">
+    <div className=" my-5 p-4 gap-5 grid items-center lg:grid-cols-2  ">
       <div className="md:h-76 w-76">
         <img
           src="https://www.adobe.com/express/create/cover/media_1bcde041d6bd2ce06433dd3d32a457d1b589ce390.jpeg"
