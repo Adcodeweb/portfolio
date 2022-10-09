@@ -2,6 +2,7 @@ import { HashLink } from "react-router-hash-link";
 import Menu from "./Menu";
 import Burguer from "./Burguer";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,15 +18,15 @@ export default function Navbar() {
     document.body.style.overflow = "unset";
   };
   return (
-    <div className="fixed w-full bg-gradient-to-t from-transparent to-black h-14">
-      <div className=" relative text-white flex justify-between p-4">
-        <div className="">
-          <h2>Adcode</h2>
+    <div className="fixed w-full bg-gradient-to-t from-transparent to-black ">
+      <div className=" relative text-white flex items-center justify-between p-4 h-24">
+        <div className="text-2xl ">
+          <Link to="/">Adcode</Link>
         </div>
         <div className="hidden gap-4 md:flex ">
           <HashLink to="#home">Home</HashLink>
+          <HashLink to="#about">Know</HashLink>
           <HashLink to="#code">Code</HashLink>
-          <HashLink to="#about">Contact</HashLink>
         </div>
         <Burguer
           openModal={openModal}

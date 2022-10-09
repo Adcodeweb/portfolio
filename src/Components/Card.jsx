@@ -1,4 +1,5 @@
 import { AiOutlinePlus } from "react-icons/ai";
+import { Link } from "react-router-dom";
 export default function Card() {
   return (
     <div className=" my-5 p-4 gap-5 grid lg:grid-cols-2  ">
@@ -11,17 +12,22 @@ export default function Card() {
       </div>
       <div className="flex flex-col ">
         <div className="">
-          <h4 className="text-2xl mb-4">Sneakers E-commerce</h4>
-          <p className="text-white/75 ">
+          <h4 className="text-2xl mb-4 text-center md:text-left  ">
+            Sneakers E-commerce
+          </h4>
+          <p className="text-white/75 text-center md:text-left">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
             nesciunt ut? Consequuntur corrupti harum obcaecati laboriosam. At
             repellat quasi sed.
           </p>
         </div>
         <div className="flex justify-center gap-4 mt-7 ">
-          <button className="border border-white cursor-pointer text-sm py-2 px-4">
+          <Link
+            to="/project/12"
+            className="border border-white cursor-pointer text-sm py-2 px-4"
+          >
             Live
-          </button>
+          </Link>
           <button className="border border-white cursor-pointer text-sm py-2 px-4 ">
             More
           </button>
