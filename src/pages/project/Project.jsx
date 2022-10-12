@@ -20,9 +20,11 @@ export default function Project() {
         <div className="flex flex-col md:flex-row gap-5 items-center">
           {/* left */}
           <div className="flex-1">
-            <h1 className="text-3xl text-center mb-4 font-title text-primary uppercase font-bold sm:text-4xl lg:text-left md:text-6xl ">
+            <h1 className="text-3xl text-center mb-2 font-title text-primary uppercase font-bold sm:text-4xl lg:text-left md:text-6xl ">
               E commerce Sneakers
             </h1>
+            <p className="text-xs mb-4 underline ">Still in development</p>
+
             <p className=" text-white/80 mb-4 sm:text-center md:text-lg md:text-left ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Doloremque, provident sit iusto obcaecati dolore perferendis
@@ -36,14 +38,14 @@ export default function Project() {
             </div>
             <div className="flex flex-wrap gap-4  justify-center p-4 md:border-b md:mt-7 md:pb-10 border-primary">
               <a
-                href="#"
+                href="/"
                 className="flex items-center shadow-sm shadow-primary p-3 rounded-md gap-2  hover:text-primary hover:bg-dark ease-in-out duration-200"
               >
                 <RiExternalLinkLine />
                 Live Page
               </a>
               <a
-                href="#"
+                href="/"
                 className="flex items-center shadow-sm shadow-primary p-3 rounded-md gap-2 hover:text-primary hover:bg-dark ease-in-out duration-200"
               >
                 <RiGithubFill />

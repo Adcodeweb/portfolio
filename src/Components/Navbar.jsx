@@ -25,7 +25,7 @@ export default function Navbar() {
           <Link to="/">
             <img
               className="w-16 
-            p-4"
+            p-4 hover:scale-110 ease-in-out duration-100"
               src={logo}
               alt="logo of alberto sierra"
             />
@@ -42,13 +42,13 @@ export default function Navbar() {
             to="#about"
             className=" hover:text-primary hover:border-primary hover:border-b ease-in duration-200"
           >
-            Know
+            Know me
           </HashLink>
           <HashLink
             to="#code"
             className=" hover:text-primary hover:border-primary hover:border-b ease-in duration-200"
           >
-            Code
+            Projects
           </HashLink>
         </div>
         <Burguer

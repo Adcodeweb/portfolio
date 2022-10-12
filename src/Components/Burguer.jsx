@@ -1,4 +1,3 @@
-import Menu from "./Menu";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
 

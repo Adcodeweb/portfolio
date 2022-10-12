@@ -2,7 +2,6 @@ import profilePhoto from "./p.png";
 import { GrReactjs } from "react-icons/gr";
 import { SiFirebase, SiTailwindcss } from "react-icons/si";
 import { DiSass, DiJavascript1 } from "react-icons/di";
-import { TbBrandTailwind } from "react-icons/tb";
 
 export default function About() {
   return (
@@ -16,16 +15,12 @@ export default function About() {
         </h2>
         <div className="flex flex-col items-center gap-8 md:flex-row md:gap-0  ">
           <div className="flex-1">
-            <img
-              className="m-auto md:w-96"
-              src={profilePhoto}
-              alt="image of person"
-            />
+            <img className="m-auto md:w-96" src={profilePhoto} alt="person" />
           </div>
           <div className="flex flex-col gap-3 flex-1 md:p-5 md:mr-10">
             <h3 className="text-2xl">Hello there!</h3>
             <p>
-              Hi, my name is
+              My name is
               <span className="text-primary text-xl"> Alberto Sierra</span> , I
               am a Front-end web developer. When I'm not coding I like to go out
               for a run.
