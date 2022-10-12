@@ -12,10 +12,10 @@ export default function Card() {
       </div>
       <div className="flex flex-col ">
         <div className="">
-          <h4 className="text-2xl mb-4 text-center md:text-left  ">
+          <h4 className="text-2xl mb-4 text-center font-title text-secondary md:text-left  ">
             Sneakers E-commerce
           </h4>
-          <p className="text-white/75 text-center md:text-left">
+          <p className="text-light text-center md:text-left">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
             nesciunt ut? Consequuntur corrupti harum obcaecati laboriosam. At
             repellat quasi sed.
@@ -24,11 +24,11 @@ export default function Card() {
         <div className="flex justify-center gap-4 mt-7 ">
           <Link
             to="/project/12"
-            className="border border-white cursor-pointer text-sm py-2 px-4"
+            className="border border-primary cursor-pointer text-sm py-2 px-4"
           >
             Live
           </Link>
-          <button className="border border-white cursor-pointer text-sm py-2 px-4 ">
+          <button className="border border-primary cursor-pointer text-sm py-2 px-4 ">
             More
           </button>
         </div>

@@ -15,14 +15,14 @@ export default function Menu({ closeModal }) {
             My projects
           </HashLink>
           <h4
-            className="border border-white text-center mt-5"
+            className="border border-primary text-center mt-5"
             onClick={closeModal}
           >
             Resume
           </h4>
           <a
             href="mailto:adcodeweb@gmail.com"
-            className="border border-white cursor-pointer text-center "
+            className="border border-primary cursor-pointer text-center "
           >
             Contact
           </a>
