@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import { Home } from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 import Project from "./Pages/project/Project";
 
 
@@ -13,7 +13,6 @@ function App() {
     <div className=" bg-black " >
       <BrowserRouter  >
         <Navbar />
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project/:id" element={<Project />} />

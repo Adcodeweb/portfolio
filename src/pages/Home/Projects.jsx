@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../../../Components/Card";
+import Card from "../../Components/Card";
 
 export default function Projects() {
   return (
@@ -7,7 +7,7 @@ export default function Projects() {
       <div className="max-w-6xl m-auto">
         <h2
           className="text-3xl mb-10 text-primary font-title md:ml-8 md:mt-20 "
-          id="code"
+          id="projects"
         >
           Projects
         </h2>
@@ -17,9 +17,6 @@ export default function Projects() {
           odio.
         </p>
         <div className="grid gap-5 mt-5 md:grid-cols-2 max-w-7xl m-auto ">
-          <Card />
-          <Card />
-          <Card />
           <Card />
         </div>
       </div>

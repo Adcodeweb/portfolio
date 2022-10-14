@@ -1,12 +1,9 @@
-import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
-import Contact from "./sections/Contact";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { useRef } from "react";
+import Hero from "./Hero";
+import About from "./About";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
-export function Home() {
-  const ref = useRef();
+export default function Home() {
   return (
     <div className="pb-10">
       <Hero />

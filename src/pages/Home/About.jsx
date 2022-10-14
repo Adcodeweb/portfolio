@@ -1,4 +1,4 @@
-import profilePhoto from "./p.png";
+import profilePhoto from "../../assets/p.png";
 import { GrReactjs } from "react-icons/gr";
 import { SiFirebase, SiTailwindcss } from "react-icons/si";
 import { DiSass, DiJavascript1 } from "react-icons/di";
