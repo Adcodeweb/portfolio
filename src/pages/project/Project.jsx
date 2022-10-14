@@ -6,8 +6,12 @@ import {
 import { SiTailwindcss, SiFirebase } from "react-icons/si";
 import { TiArrowBackOutline } from "react-icons/ti";
 import { useNavigate } from "react-router-dom";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/css/sea-green";
+
 export default function Project() {
   let navigate = useNavigate();
+
   return (
     <div className="py-16 text-light ">
       <button
@@ -16,15 +20,14 @@ export default function Project() {
       >
         <TiArrowBackOutline />
       </button>
-      <div className="p-5 mt-5 md:max-w-6xl m-auto max-w-lg md:px-5 ">
-        <div className="flex flex-col md:flex-row gap-5 items-center">
+      <main className="p-5 mt-5 md:max-w-6xl m-auto max-w-lg md:px-5 ">
+        <div className="flex flex-col md:flex-row gap-3 items-center">
           {/* left */}
           <div className="flex-1">
-            <h1 className="text-3xl text-center mb-2 font-title text-primary uppercase font-bold sm:text-4xl lg:text-left md:text-6xl ">
+            <h1 className="text-4xl text-center mb-2 font-title text-primary uppercase font-bold sm:text-4xl lg:text-left md:text-6xl ">
               E commerce Sneakers
             </h1>
             <p className="text-xs mb-4 underline ">Still in development</p>
-
             <p className=" text-white/80 mb-4 sm:text-center md:text-lg md:text-left ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Doloremque, provident sit iusto obcaecati dolore perferendis
@@ -53,17 +56,38 @@ export default function Project() {
               </a>
             </div>
           </div>
+
           {/* right */}
-
-          <img
-            src="https://media.giphy.com/media/VgkbQX1NTzmDuIcPRs/giphy.gif"
-            alt="project img"
-            className="mx-auto my-5 flex-1 sm:w-full  md:h-80 object-cover object-top lg:h-96  "
-          />
+          <Splide
+            options={{
+              perPage: 1,
+              classes: {
+                arrow: "splide__arrow your-class-arrow",
+                page: "splide__pagination__page your-class-page",
+              },
+            }}
+            className="flex-1 min-w-0 "
+          >
+            <SplideSlide>
+              <img
+                src="https://architizer-prod.imgix.net/media/1481477117351vu_squeeze.jpg?fit=max&w=1680&q=60&auto=format&auto=compress&cs=strip"
+                alt="project img"
+                className="md:w-10/12 m-auto object-cover"
+              />
+            </SplideSlide>
+            <SplideSlide>
+              <img
+                src="https://www.adobe.com/express/create/cover/media_1bcde041d6bd2ce06433dd3d32a457d1b589ce390.jpeg?width=400&format=jpeg&optimize=medium"
+                alt="project img"
+                className="md:w-10/12 m-auto object-cover"
+              />
+            </SplideSlide>
+          </Splide>
         </div>
-      </div>
+      </main>
 
-      <div className="my-10 p-10 md:px-16 max-w-4xl m-auto">
+      {/* info */}
+      <article className="my-10 p-10 md:px-16 max-w-4xl m-auto">
         <h3 className="text-2xl mb-4 text-secondary md:text-3xl">Title</h3>
         <p className="text-white/90 md:text-lg">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
@@ -72,7 +96,9 @@ export default function Project() {
           fuga odit iste. Quam doloremque error quae ipsa sed fugit quasi
           provident!
         </p>
-      </div>
+      </article>
     </div>
   );
 }
+
+// className="mx-auto my-5 flex-1 sm:w-full  md:h-80 object-cover object-top lg:h-96  "

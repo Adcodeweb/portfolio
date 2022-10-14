@@ -10,3 +10,14 @@
 .ax {
   color: #ffffff;
 }
+
+.your-class-page {
+  background-color: rgb(4, 255, 0, 0.5);
+}
+.your-class-page.is-active {
+  background-color: rgb(4, 255, 0);
+}
+
+.your-class-arrow svg {
+  fill: rgb(4, 255, 0);
+}
