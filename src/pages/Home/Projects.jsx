@@ -1,7 +1,20 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import Card from "../../Components/Card";
+import { urlFor, client } from "../../client";
 
 export default function Projects() {
+  const [works, setWorks] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "projects"]{_id, imageurl,overview,title}';
+
+    client.fetch(query).then((data) => {
+      setWorks(data);
+    });
+  }, []);
+
   return (
     <div className="p-5 pt-14 text-light">
       <div className="max-w-6xl m-auto">
@@ -17,7 +30,18 @@ export default function Projects() {
           odio.
         </p>
         <div className="grid gap-5 mt-5 md:grid-cols-2 max-w-7xl m-auto ">
-          <Card />
+          {works &&
+            works.map((i) => {
+              return (
+                <Card
+                  key={i._id}
+                  title={i.title}
+                  overview={i.overview}
+                  img={urlFor(i.imageurl)}
+                  id={i._id}
+                />
+              );
+            })}
         </div>
       </div>
     </div>
