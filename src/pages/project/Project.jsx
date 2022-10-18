@@ -86,6 +86,7 @@ export default function Project() {
             <div className="flex flex-wrap gap-4  justify-center p-4 md:border-b md:mt-7 md:pb-10 border-primary">
               <a
                 href={works?.projectLink}
+                target="_blank"
                 className="flex items-center shadow-sm shadow-primary p-3 rounded-md gap-2  hover:text-primary hover:bg-dark ease-in-out duration-200"
               >
                 <RiExternalLinkLine />
@@ -93,6 +94,7 @@ export default function Project() {
               </a>
               <a
                 href={works?.codeLink}
+                target="_blank"
                 className="flex items-center shadow-sm shadow-primary p-3 rounded-md gap-2 hover:text-primary hover:bg-dark ease-in-out duration-200"
               >
                 <RiGithubFill />
