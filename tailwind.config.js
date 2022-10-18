@@ -13,7 +13,8 @@ module.exports = {
         "primary": "#88ED24",
         "dark": "#0C1B00",
         "light": "#F5EFED",
-        "secondary": " #64BA0E"
+        "secondary": " #4e7d55",
+        "fn": "#021b20"
       },
       fontFamily: {
         "title": "Londrina Solid, cursive"
@@ -32,3 +33,4 @@ module.exports = {
 
 
 // #568259
+

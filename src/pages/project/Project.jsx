@@ -13,13 +13,14 @@ export default function Project() {
   let navigate = useNavigate();
 
   return (
-    <div className="py-16 text-light ">
+    <div className="py-16 text-light bg-gradient-to-br from-black to-fn ">
       <button
         onClick={() => navigate(-1)}
         className="fixed bottom-6 right-4 bg-primary/25 rounded-full p-2 text-4xl"
       >
         <TiArrowBackOutline />
       </button>
+      <div className="pattern2 h-28 w-full"></div>
       <main className="p-5 mt-5 md:max-w-6xl m-auto max-w-lg md:px-5 ">
         <div className="flex flex-col md:flex-row gap-3 items-center">
           {/* left */}

@@ -2,11 +2,12 @@ import profilePhoto from "../../assets/p.png";
 import { GrReactjs } from "react-icons/gr";
 import { SiFirebase, SiTailwindcss } from "react-icons/si";
 import { DiSass, DiJavascript1 } from "react-icons/di";
+import { FiFigma } from "react-icons/fi";
 
 export default function About() {
   return (
-    <div className="bg-gradient-to-r from-black to-dark text-light p-4 py-20  ">
-      <div className="max-w-6xl m-auto">
+    <div className="text-light p-4 py-20   ">
+      <div className="max-w-6xl m-auto ">
         <h2
           className="text-3xl text-primary font-title mb-10 md:ml-10 md:my-20  "
           id="about"
@@ -14,11 +15,11 @@ export default function About() {
           About
         </h2>
         <div className="flex flex-col items-center gap-8 md:flex-row md:gap-0  ">
-          <div className="flex-1">
+          <div className="flex-1 pattern ">
             <img className="m-auto md:w-96" src={profilePhoto} alt="person" />
           </div>
-          <div className="flex flex-col gap-3 flex-1 md:p-5 md:mr-10">
-            <h3 className="text-2xl">Hello there!</h3>
+          <div className="flex flex-col gap-3 flex-1 border-t  border-primary md:p-5 md:mr-10 md:border-l md:border-t-0 ">
+            <h3 className="text-2xl mt-5 md:mt-0">Hello there!</h3>
             <p>
               My name is
               <span className="text-primary text-xl"> Alberto Sierra</span> , I
@@ -39,6 +40,7 @@ export default function About() {
                 <DiSass className="text-pink-600" />
                 <DiJavascript1 className="text-yellow-400" />
                 <SiTailwindcss className="text-sky-500" />
+                <FiFigma className="text-white/80" />
               </div>
             </div>
           </div>

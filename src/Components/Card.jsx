@@ -25,10 +25,10 @@ export default function Card() {
             to="/project/12"
             className="border border-primary cursor-pointer text-sm py-2 px-4"
           >
-            Live
+            More
           </Link>
           <button className="border border-primary cursor-pointer text-sm py-2 px-4 ">
-            More
+            Live
           </button>
         </div>
       </div>
